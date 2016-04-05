@@ -17,7 +17,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>3.5</version>
+            <version>3.4</version>
         </dependency>
 
         <dependency>
@@ -41,9 +41,9 @@
             </dependency>
         </dependencies>
         <configuration>
-            <test>com.${suite}</test>
+            <test>${suite}</test>
             <systemPropertyVariables>
-                <webdriver.chrome.driver>C:\chromedriver_win32</webdriver.chrome.driver>
+                <webdriver.chrome.driver>C://chromedriver_win32//chromedriver.exe</webdriver.chrome.driver>
                 <driver.browser>${driver.browser}</driver.browser>
             </systemPropertyVariables>
         </configuration>
