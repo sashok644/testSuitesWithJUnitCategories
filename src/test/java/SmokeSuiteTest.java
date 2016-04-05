@@ -1,10 +1,10 @@
 
 
+import categories.Smoke;
+import features.TodosE2ETest;
 import org.junit.experimental.categories.Categories;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import categories.Buggy;
-import features.TodosE2ETest;
 
 /**
  * Created by 64 on 04.04.2016.
@@ -12,7 +12,7 @@ import features.TodosE2ETest;
 
 @RunWith(Categories.class)
 @Suite.SuiteClasses(TodosE2ETest.class)
-@Categories.ExcludeCategory(Buggy.class)
+@Categories.IncludeCategory(Smoke.class)
 
 public class SmokeSuiteTest {
 }

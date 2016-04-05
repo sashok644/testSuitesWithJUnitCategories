@@ -1,5 +1,6 @@
 package features;
 
+import categories.Smoke;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import categories.Buggy;
@@ -34,6 +35,7 @@ public class TodosOperationsAtAllFilterTest extends BaseTest {
     }
 
     @Test
+    @Category(Smoke)
     public void testReopenAllAtAll() {
 
         givenAtAll(COMPLETED, "A", "B", "C", "D");
